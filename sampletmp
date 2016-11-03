@@ -1,51 +1,7 @@
 mbednarowicz@s06nyc01> show configuration forwarding-options
 
 {master:6}
-mbednarowicz@s06nyc01> show configuration
-## Last commit: 2016-02-10 13:58:36 EST by mbednarowicz
-version 12.3R6.6;
-system {
-    host-name s06nyc01;
-    domain-name smartling.net;
-    time-zone America/New_York;
-    root-authentication {
-        encrypted-password "$1$Af9pDjNc$4oOZ7q2LKjrvX6tF36vOy1"; ## SECRET-DATA
-    }
-    login {
-        user bslusky {
-            full-name "Ben Slusky";
-            uid 2001;
-            class super-user;
-            authentication {
-                encrypted-password "$1$h4xGVa8v$EfdOtBig4RHPGf7p6fJjG."; ## SECRET-DATA
-                ssh-rsa "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZtQ3A1yqsTupU5cWY3S+3ZozqcojN/w2i48P9KTZh9o1wKMlCGdexKWL37Rd4eT5Fd5IUlGHKoxRNAcn5a47Ymxopo11K/N1MZNvKUe/XIRfWg0bhqUZ89pf8NwZ6b/dPKNrPmfhHUNrAsjC166+uc8X5bS4FY/tTTCXvO2ML5Qstbpa/ficDj2DBJkXzxYkip24DQ20Uk6CppId6olPh6TMgpqV3/OekKePGLkzRNyWwaV5Lql5hbpzlmYiq5OlPcVIghzEmNnJ0BOmqNJRlPuf9rb0nt795JGg8iOpcgbSyyTAgNP3b+W7Kk+ZfpodX1+u3LLIl1wXWNUpdTcO3 bslusky@blackkingbar"; ## SECRET-DATA
-            }
-        }
-        user mbednarowicz {
-            full-name "Mariusz Bednarowicz";
-            uid 2002;
-            class super-user;
-            authentication {
-                encrypted-password "$1$0nAURqvS$BipE3RumHCnLojvLYQ5Qt0"; ## SECRET-DATA
-            }
-        }
-        user oshpak {
-            full-name "Oleg Shpak";
-            uid 2000;
-            class super-user;
-            authentication {
-                encrypted-password "$1$2ElcH2/7$pds1U1yDTmi7HSUlv5f1H0"; ## SECRET-DATA
-            }
-        }
-    }
-    services {
-        ssh;
-        web-management {
-            http {
-                port 80;
-            }
-            https {
-                port 443;
+mb
                 system-generated-certificate;
             }
         }
